@@ -1,0 +1,234 @@
+        @font-face {
+            font-family:Corpit;
+            src: url('./Corpta-DEMO.otf') format('opentype');
+        }
+        * {
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        html,
+        body {
+            font-family: Corpit;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            width: 80%;
+            height: 80%;
+            background-color: transparent;
+            border-radius: 50px;
+            display: grid;
+            grid-template-columns: 150px 1fr 0.5fr 100px 75px 0.25fr 0.25fr;
+            grid-template-rows: 80px 2fr 0.5fr 1fr;
+            padding: 5px;
+            grid-template-areas: 
+                "glitch image image search lock contact contact"
+                "left image image right right right right"
+                "left image image imgExtra bottomTopRight bottomTopRight blank"
+                "left image image imgExtra bottomImgRight bottomright bottomright";
+        }
+
+        #glitch {
+            background-color: #303233;
+            grid-area: glitch;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        #search {
+            background-color: #303233;
+            grid-area: search;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 30px;
+        }
+
+        #lock {
+            background-color: #303233;
+            grid-area: lock;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 30px;
+        }
+
+        #contact {
+            background-color: #303233;
+            grid-area: contact;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size:28px;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        #contact p i{
+            background-color: white;
+            padding: 7px;
+            color: #303233;
+            border-radius: 13px;
+            
+        }
+
+        #image {
+            background-color: #303233;
+            grid-area: image;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            
+        }
+        #image img{
+            object-fit: cover;
+            object-position: top;
+            width: 100%;
+            height: 573px;
+            position: absolute;
+            top: 6%;
+            left: 23%;
+            border-bottom-right-radius: 30px;
+            z-index: 1;
+
+        }
+        #img-extra {
+            background-color: #303233;
+            grid-area: imgExtra;
+            display: flex;
+            border-bottom-right-radius: 30px;
+        }
+
+        #bottom-right {
+            background-color: #303233;
+            grid-area: bottomright;
+            display: flex;
+            align-items: center;
+            justify-content:flex-end;
+            margin-right: 2px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        #bottom-right p{
+            text-align: center;
+            text-transform: uppercase;
+            padding: 22px;
+            font-size: 22px;
+        }
+        #bottom-img-right {
+            background-color: #303233;
+            grid-area: bottomImgRight;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 2px;
+            border-bottom-left-radius: 30px;
+            z-index: 1;
+        }
+        #bottom-img-right img{
+            object-fit: cover;
+            object-position: top;
+            height: 200px;
+            position: absolute;
+            bottom: 11%;
+            right: 18%;
+            z-index: 2;
+        }
+        #bottom-top-right {
+            background-color: #303233;
+            grid-area: bottomTopRight;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+            margin-left: 2px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        #left {
+            background-color: #303233;
+            grid-area: left;
+            display: flex;
+            gap: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+
+        #left p{
+            position: absolute;
+            font-size: 60px;
+            z-index: 0;
+            left: 14%;
+            bottom: 11%;
+
+        }
+        #right {
+            background-color: #303233;
+            grid-area: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        #blank{
+            background-color: transparent;
+            grid-area: blank;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #buttons{
+            background-color: #303233;
+            border-radius: 20px;
+            height: 80%;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #buttons p i{
+            background-color: white;
+            padding: 7px;
+            color: #303233;
+            border-radius: 10px;
+        }
+        #center-text{
+            background-color: transparent;
+            display: flex;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 300px;
+            z-index: 0;
+        }
