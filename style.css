@@ -1,9 +1,10 @@
         @font-face {
-            font-family:Corpit;
+            font-family: Corpit;
             src: url('./Corpta-DEMO.otf') format('opentype');
         }
+
         * {
-            
+
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -30,12 +31,12 @@
             grid-template-columns: 150px 1fr 0.5fr 100px 75px 0.25fr 0.25fr;
             grid-template-rows: 80px 2fr 0.5fr 1fr;
             padding: 5px;
-            grid-template-areas: 
+            grid-template-areas:
                 "glitch image image search lock contact contact"
                 "left image image right right right right"
                 "left image image imgExtra bottomTopRight bottomTopRight blank"
                 "left image image imgExtra bottomImgRight bottomright bottomright";
-            
+
         }
 
         #glitch {
@@ -81,18 +82,19 @@
             gap: 10px;
             border-radius: 20px;
             margin: 5px;
-            font-size:28px;
+            font-size: 28px;
             display: flex;
             justify-content: space-evenly;
             padding: 10px;
             text-transform: uppercase;
         }
-        #contact p i{
+
+        #contact p i {
             background-color: white;
             padding: 7px;
             color: #303233;
             border-radius: 13px;
-            
+
         }
 
         #image {
@@ -104,9 +106,10 @@
             position: relative;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
-            
+
         }
-        #image img{
+
+        #image img {
             object-fit: cover;
             object-position: top;
             width: 100%;
@@ -118,6 +121,7 @@
             z-index: 1;
 
         }
+
         #img-extra {
             background-color: #303233;
             grid-area: imgExtra;
@@ -130,17 +134,19 @@
             grid-area: bottomright;
             display: flex;
             align-items: center;
-            justify-content:flex-end;
+            justify-content: flex-end;
             margin-right: 2px;
             border-bottom-right-radius: 30px;
             border-top-right-radius: 30px;
         }
-        #bottom-right p{
+
+        #bottom-right p {
             text-align: center;
             text-transform: uppercase;
             padding: 22px;
             font-size: 22px;
         }
+
         #bottom-img-right {
             background-color: #303233;
             grid-area: bottomImgRight;
@@ -151,7 +157,8 @@
             border-bottom-left-radius: 30px;
             z-index: 1;
         }
-        #bottom-img-right img{
+
+        #bottom-img-right img {
             object-fit: cover;
             object-position: top;
             height: 200px;
@@ -160,6 +167,7 @@
             right: 18%;
             z-index: 2;
         }
+
         #bottom-top-right {
             background-color: #303233;
             grid-area: bottomTopRight;
@@ -171,6 +179,7 @@
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
         }
+
         #left {
             background-color: #303233;
             grid-area: left;
@@ -183,7 +192,7 @@
             border-bottom-left-radius: 30px;
         }
 
-        #left p{
+        #left p {
             position: absolute;
             font-size: 45px;
             z-index: 0;
@@ -191,6 +200,7 @@
             bottom: 11%;
 
         }
+
         #right {
             background-color: #303233;
             grid-area: right;
@@ -200,15 +210,17 @@
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
         }
-        #blank{
+
+        #blank {
             background-color: transparent;
             grid-area: blank;
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
         }
-        #buttons{
+
+        #buttons {
             background-color: #303233;
             border-radius: 20px;
             height: 80%;
@@ -217,13 +229,15 @@
             align-items: center;
             justify-content: space-evenly;
         }
-        #buttons p i{
+
+        #buttons p i {
             background-color: white;
             padding: 7px;
             color: #303233;
             border-radius: 10px;
         }
-        #center-text{
+
+        #center-text {
             background-color: transparent;
             display: flex;
             position: absolute;
@@ -234,72 +248,81 @@
             z-index: 0;
             color: #545558;
         }
-        #text1{
+
+        #text1 {
             position: absolute;
             top: 25%;
             left: 25%;
         }
-        #text2{
+
+        #text2 {
             position: absolute;
             top: 44%;
             left: 76%;
         }
-        #text3{
+
+        #text3 {
             position: absolute;
             left: 21%;
             top: 61%;
         }
-#underline1 {
-    border-bottom: 3px solid white;
-    width: 129px;
-    height: 0;
-    position: absolute;
-    top: 26%;
-    left: 35%;
-}
-#underline2 {
-    border-bottom: 3px solid white;
-    width: 127px;
-    height: 0;
-    position: absolute;
-    top: 45%;
-    left: 66.9%;
-}
-#underline3 {
-    border-bottom: 3px solid white;
-    width: 137px;
-    height: 0;
-    position: absolute;
-    left: 36.2%;
-    top: 62%;
-}
-#dot1{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: white;
-    top: 25.5%;
-    left: 43.4%;
-    z-index: 10;
-}
-#dot2{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: white;
-    top: 44.6%;
-    left: 66.3%;
-    z-index: 10;
-}
-#dot3{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: white;
-    left: 45%;
-    top: 61.5%;
-    z-index: 10;
-}
+
+        #underline1 {
+            border-bottom: 3px solid white;
+            width: 129px;
+            height: 0;
+            position: absolute;
+            top: 26%;
+            left: 35%;
+        }
+
+        #underline2 {
+            border-bottom: 3px solid white;
+            width: 127px;
+            height: 0;
+            position: absolute;
+            top: 45%;
+            left: 66.9%;
+        }
+
+        #underline3 {
+            border-bottom: 3px solid white;
+            width: 137px;
+            height: 0;
+            position: absolute;
+            left: 36.2%;
+            top: 62%;
+        }
+
+        #dot1 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: white;
+            top: 25.5%;
+            left: 43.4%;
+            z-index: 10;
+        }
+
+        #dot2 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: white;
+            top: 44.6%;
+            left: 66.3%;
+            z-index: 10;
+        }
+
+        #dot3 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: white;
+            left: 45%;
+            top: 61.5%;
+            z-index: 10;
+        }
