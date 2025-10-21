@@ -35,6 +35,7 @@
                 "left image image right right right right"
                 "left image image imgExtra bottomTopRight bottomTopRight blank"
                 "left image image imgExtra bottomImgRight bottomright bottomright";
+            
         }
 
         #glitch {
@@ -184,7 +185,7 @@
 
         #left p{
             position: absolute;
-            font-size: 60px;
+            font-size: 45px;
             z-index: 0;
             left: 14%;
             bottom: 11%;
@@ -226,9 +227,79 @@
             background-color: transparent;
             display: flex;
             position: absolute;
-            top: 45%;
+            top: 49%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 300px;
+            font-size: 280px;
             z-index: 0;
+            color: #545558;
         }
+        #text1{
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+        #text2{
+            position: absolute;
+            top: 44%;
+            left: 76%;
+        }
+        #text3{
+            position: absolute;
+            left: 21%;
+            top: 61%;
+        }
+#underline1 {
+    border-bottom: 3px solid white;
+    width: 129px;
+    height: 0;
+    position: absolute;
+    top: 26%;
+    left: 35%;
+}
+#underline2 {
+    border-bottom: 3px solid white;
+    width: 127px;
+    height: 0;
+    position: absolute;
+    top: 45%;
+    left: 66.9%;
+}
+#underline3 {
+    border-bottom: 3px solid white;
+    width: 137px;
+    height: 0;
+    position: absolute;
+    left: 36.2%;
+    top: 62%;
+}
+#dot1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    top: 25.5%;
+    left: 43.4%;
+    z-index: 10;
+}
+#dot2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    top: 44.6%;
+    left: 66.3%;
+    z-index: 10;
+}
+#dot3{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    left: 45%;
+    top: 61.5%;
+    z-index: 10;
+}
